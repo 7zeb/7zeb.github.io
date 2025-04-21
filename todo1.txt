@@ -12,4 +12,3 @@ Step 8: Annouce on Discord and YouTube
 Step 9: Add settings.html
 Step 10: Add toggle to switch from light to dark mode (and keep dark mode the defualt)
 Step 11: Add message on old neocities site telling people to go to the new site.
-Step 12: Add 5 New Games to the site.
