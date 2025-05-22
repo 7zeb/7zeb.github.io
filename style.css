@@ -1,7 +1,7 @@
 /* Global Styling */
 :root {
-  --primary-color: #007bff; /* Vibrant Blue */
-  --secondary-color: #00adb5; /* Greenish Cyan */
+  --primary-color: #2c86f5; /* nice blue color */
+  --secondary-color: #18f29f; /* Greenish Cyan */
   --dark-bg: #222831; /* Dark Background */
   --text-color: #eeeeee; /* Soft White Text */
   --shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -9,8 +9,8 @@
 
 html, body {
   height: 100%;
-  background: linear-gradient(to right, #007bff, #00adb5);
-  animation: gradientShift 10s infinite alternate ease-in-out;
+  background: linear-gradient(to right, #2c886f5, #18f29f);
+  animation: gradientShift 2s infinite alternate ease-in-out;
 }
 
 
