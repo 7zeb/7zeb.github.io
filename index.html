@@ -10,14 +10,18 @@
 <body>
     <!-- Navigation Bar -->
     <nav class="topnav">
-        <a href="index.html">Home</a>
-        <a href="/updates.html">Updates</a>
-        <a href="/blog.html">Blog</a>
-        <a href="/videos/about.html">Videos</a>
-        <a href="/me.html">About Me</a>
-        <a href="/settings.html">Settings</a>
-        <a href="https://betavault.github.io">BetaVault</a>
-        <a href="/more.html">More</a>
+        <div class="nav-logo" style="font-size:1.5em;font-weight:bold;color:var(--section-primary);letter-spacing:0.05em;">NewUI</div>
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="/newui/about.html">About</a>
+            <a href="/newui/preview.html">Preview</a>
+            <a href="/newui/releases">Releases</a>
+            <a href="https://betavault.github.io">BetaVault</a>
+            <button id="dark-toggle-btn" aria-label="Toggle dark mode" style="background:none;border:none;cursor:pointer;font-size:1.4em;vertical-align:middle;outline:none;">
+                <!-- Icon will be inserted by dark.js -->
+                <span id="dark-toggle-icon">🌙</span>
+            </button>
+        </div>
     </nav>
 
 
