@@ -4,14 +4,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&display=swap');
 
 
-
+/* ---------- PAGE BACKGROUND (AERO) ---------- */
 html, body {
   min-height: 100vh;
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', 'Frutiger', 'Arial', sans-serif;
   /* FIX: Use a more visible blue-green Aero gradient */
-  background: linear-gradient(135deg, #b7eaff 0%, #7ad5f7 45%, #49e1c6 100%);
+  background: linear-gradient(135deg, #b7eaff 25%, #7af7e2 45%, #49e1c6 100%);
   /* Remove or tone down white-heavy patterns */
   /* background-image: none; */
   background-blend-mode: normal;
@@ -22,7 +22,7 @@ html, body {
 :root {
   --section-primary: #34b3f1;
   --section-secondary: #6bdfdf;
-  --section-accent: #f1f8ff;
+  --section-accent: #c7e9eb;
   --section-gradient1: #7ad5f7;
   --section-gradient2: #6bdfdf;
   --section-gradient3: #b7eaff;
