@@ -1,11 +1,8 @@
 # 7Zeb Website
-## The official website for 7Zeb's Projects & more!
-***
+The official website for the 7Zeb Website
 
-# 7Zeb Website FAQ
+### Project details
+Started on: April 2, 2025 (original 7Zeb site started on August 17, 2024)
 
-## What will happen to the Neocities site (7zeb.neocities.org)
-There is an entire plan on the Neocities site, it will have some use later.
 
-## Why does this site exist
-This site shows my new projects, videos, and more.
+- 7Zeb (The Saga Never Stops)

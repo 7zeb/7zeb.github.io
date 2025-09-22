@@ -10,28 +10,29 @@
 </head>
 <body>
     <!-- Navigation Bar -->
-   <nav class="topnav">
-        <div class="nav-logo" style="font-size:1.5em;font-weight:bold;color:var(--section-primary);letter-spacing:0.05em;">7Zeb IN</div>
+   <nav class="navbar glass">
+        <div class="nav-logo" style="font-size:1.5em;font-weight:bold;letter-spacing:0.05em;">7Zeb</div>
         <div class="nav-links">
-            <a href="/index.html">Home</a>
+            <a href="index.html" class="active">Home</a>
             <a href="/updates.html">Updates</a>
             <a href="/blog.html">Blog</a>
-            <a href="/me.html" class="active">About Me</a>
+            <a href="/me.html">About Me</a>
             <a href="/more.html">More</a>
-            <a href="https://Whistoria.github.io">Whistoria</a>
-            <button id="dark-toggle-btn" aria-label="Toggle dark mode" style="background:none;border:none;cursor:pointer;font-size:1.4em;vertical-align:middle;outline:none;">
-                <!-- Icon will be inserted by dark.js -->
-                <span id="dark-toggle-icon">🌙</span>
-            </button>
+            <a href="https://BetaCity.github.io">BetaCity</a>
+            <button class="mode-toggle" aria-label="Toggle dark mode">🌙</button
         </div>
     </nav>
 
-    <section id="warning">
+    <main>
+        <div class="main-flex">
+            <div style="flex:2 1 0; min-width:0;">
+
+    <section class="glass" id="warning">
     <h1 style="color:red;">WARNING:</h1>
     <p>This page is not finished yet and is still under construction, it might take a while actually</p>  
     </section>  
 
-   <section id="basic-info">
+   <section class="glass" id="basic-info">
      <h1>Basic info about the <b>Dell Precision 5560</b></h1>
      <ul>
          <li><b>Day Recieved (to me):</b> August 16, 2025</li>
@@ -41,7 +42,7 @@
      </ul>
    </section>
 
-    <section id="specs">
+    <section class="glass" id="specs">
         <h1>Specs</h1>
         <p>These are the specs for the Dell Inspiron 3535</p>
         <ul>
@@ -53,23 +54,40 @@
         </ul>
     </section>    
 
-    <section id="history">
+    <section class="glass" id="history">
       <h1 style="color:powderblue;">History</h1>
       <p>On August 16, 2025. I recieved my dad's old laptop which was the Dell Precision 5560, its a great coputer
       so far, and I am really enjoying it.</p>
     </section>    
 
-    <section id="featured-videos">
+    <section class="glass" id="featured-videos">
         <h1 style="color:green;">Featured Videos</h1>
         <p>The following videos are mainly aimed at this laptop.</p>
         <p>none</p>
         <h2>Future Featured Videos (maybe)</h2>
         <p>The Dell Precision 5560 - A Review</p>
+        <p>Dell Precision 5560 - Overview</p>
     </section>    
+            </div>
+        <aside class="infobox glass">
+                <h3>Important Specs</h3>
+                <p style="margin-left:0.5em;">These are some important specs of this laptop</p>
+                <ul style="margin-left:1em;">
+                    <li>CPU: Intel Core i7-11850H</li>
+                    <li>RAM: 32GB DDR4</li>
+                    <li>GPU: RTX A2000 Laptop GPU (4GB VRAM)</li>
+                </ul>
+            </aside>
+      </div>
+  </main>
+
+                
     <!-- Footer -->
-    <footer>
-        <p>© 2025 Rutwik Stuff Branding Umbrella | This website is <a href="https://www.github.io/7zeb/website">open-source</a></p>
+   <footer class="footer glass">
+        <p>© 2025 Rutwik Stuff Branding Umbrella | This website is <a href="https://www.github.io/7zeb/website">open-source*</a></p>
+        <p>Last modified on: September 18, 2025</p>
+        <p>*NewUI 3 is not open-source until November 19, 2025</p>
     </footer>
-    <script src="/dark.js"></script>
+    <script src="/required.js"></script>
 </body>
 </html>

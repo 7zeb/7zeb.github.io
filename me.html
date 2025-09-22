@@ -10,31 +10,30 @@
 </head>
 <body>
     <!-- Navigation Bar -->
-     <nav class="topnav">
-        <div class="nav-logo" style="font-size:1.5em;font-weight:bold;color:var(--section-primary);letter-spacing:0.05em;">7Zeb</div>
+      <nav class="navbar glass">
+        <div class="nav-logo" style="font-size:1.5em;font-weight:bold;letter-spacing:0.05em;">7Zeb</div>
         <div class="nav-links">
             <a href="index.html" class="active">Home</a>
             <a href="/updates.html">Updates</a>
             <a href="/blog.html">Blog</a>
             <a href="/me.html">About Me</a>
             <a href="/more.html">More</a>
-            <a href="https://Whistoria.github.io">Whistoria</a>
-            <button id="dark-toggle-btn" aria-label="Toggle dark mode" style="background:none;border:none;cursor:pointer;font-size:1.4em;vertical-align:middle;outline:none;">
-                <!-- Icon will be inserted by dark.js -->
-                <span id="dark-toggle-icon">🌙</span>
-            </button>
+            <a href="https://BetaCity.github.io">BetaCity</a>
+            <button class="mode-toggle" aria-label="Toggle dark mode">🌙</button
         </div>
     </nav>
 
-
+    <main>
+        <div class="main-flex">
+            <div style="flex:2 1 0; min-width:0;">
     <!-- The amazing part -->
-    <section id="home">
+    <section class="glass" id="home">
         <h1>About 7Zeb</h1>
         <p>Hi, I'm Rutwik, better known online as 7Zeb.</p>
         <p>Want to know my history on YouTube? <a href="/blog/article4">Click Here</a></p>
     </section>
 
-    <section id="devices-i-own">
+    <section class="glass" id="devices-i-own">
          <h2>What devices I own</h2>
          <h4>How much time do you have?</h4>
          <h3>Laptops:</h3>
@@ -76,12 +75,24 @@
          <p>Asus Chromebook (i forgot the specs)</p>
          <p>Lenovo Ideapad Flex 14 API <a href="/about/lenovo-ideapad-flex-14.html"><button>Check out specs</button></a></p>
     </section>
-
-
+        </div>
+            <aside class="infobox glass">
+                <h3>Infobox</h3>
+                <p style="margin-left:0.5em;">Projects I'm currently working on</p>
+                <ul style="margin-left:1em;">
+                    <li>RVE (Rutwik Video Editor)</li>
+                    <li>Updating 7Zeb projects to NewUI 4</li>
+                    <li>Windows 7 on Dell Inspiron 5566 Project</li>
+                    <li>Windows ME Retrospective</li>
+                </ul>
+            </aside>
+      </div>
+    </main>    
     <!-- Footer -->
-    <footer>
+    <footer class="footer glass">
         <p>© 2025 Rutwik Stuff Branding Umbrella | This website is <a href="https://www.github.io/7zeb/newui">open-source</a></p>
+        <p>Last Modified on: September 12, 2025</p>
     </footer>
-    <script src="/dark.js"></script>
+        <script src="/required.js"></script>
 </body>
 </html>

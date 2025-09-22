@@ -4,37 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>7Zeb - Blog Homepage</title>
-    <link rel="icon" type="image/x-icon" href="https://yt3.googleusercontent.com/03jIRJzVlMaHiThCNE61ws5GdSNQfnJUDDvhjbzACOh8pC4MhTEKZ9HAduMP3bukMEmH_O6Dyt4=s160-c-k-c0x00ffffff-no-rj"></head>
+    <link rel="icon" type="image/x-icon" href="/logos/logo8.png"></head>
     <link rel="stylesheet" href="/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="logos/logo8.png"></head>
 </head>
 <body>
     <!-- Navigation Bar -->
-     <nav class="topnav">
-        <div class="nav-logo" style="font-size:1.5em;font-weight:bold;color:var(--section-primary);letter-spacing:0.05em;">7Zeb IN</div>
+     <nav class="navbar glass">
+        <div class="nav-logo" style="font-size:1.5em;font-weight:bold;letter-spacing:0.05em;">7Zeb</div>
         <div class="nav-links">
             <a href="index.html" class="active">Home</a>
             <a href="/updates.html">Updates</a>
             <a href="/blog.html">Blog</a>
             <a href="/me.html">About Me</a>
             <a href="/more.html">More</a>
-            <a href="https://Whistoria.github.io">Whistoria</a>
-            <button id="dark-toggle-btn" aria-label="Toggle dark mode" style="background:none;border:none;cursor:pointer;font-size:1.4em;vertical-align:middle;outline:none;">
-                <!-- Icon will be inserted by dark.js -->
-                <span id="dark-toggle-icon">🌙</span>
-            </button>
+            <a href="https://BetaCity.github.io">BetaCity</a>
+            <button class="mode-toggle" aria-label="Toggle dark mode">🌙</button
         </div>
     </nav>
+
+    <main>
+        <div class="main-flex">
+            <div style="flex:2 1 0; min-width:0;">
     <!-- The amazing part -->
-    <section id="home">
+    <section class="glass" id="home">
         <h1>Welcome to the 7Zeb Blog</h1>
         <p>These are blog posts that I have thought out a bit too much on.</p>
         <p>Looking for the quick updates? <a href="/updates.html"><button>Updates Page</button></a></p>
     </section>
 
     <!-- These are the blog posts. -->
-    <section id="blogui">
+    <section class="glass" id="blogui">
        <h1>These are the blog posts (sorted from newest to oldest)</h1>
        <br>
        <h1>Summer Upload Boom</h1>
@@ -53,17 +54,29 @@
        <p>So I got a new laptop, and here's my review. <a href="/blog/article9.html"><button>Read Now</button></a></p>
     </section>
 
-
-  <section id="ze-question">
-  <h1>Looking for the old blog posts???</h1>
+  <section class="glass" id="ze-question">
+  <h1>Looking for the old blog posts?</h1>
   <p>They are in the <a href="/blogarchive/index.html">7Zeb Blog Archive</a></p>
   </section>
-  
+
+            </div>
+            <aside class="infobox glass">
+                <h3>Infobox</h3>
+                <p style="margin-left:0.5em;">This is a test of the infobox</p>
+                <ul style="margin-left:1em;">
+                    <li>If it doesn't work im cooked</li>
+                    <li>If it does work, im keeping this text</li>
+                    <li>this infobox is on the right side</li>
+                </ul>
+            </aside>
+        </div>
+ </main>       
     <!-- Footer -->
-    <footer>
-        <p>© 2025 Rutwik Stuff Branding Umbrella | This website is <a href="https://www.github.io/7zeb/newui">open-source</a></p>
-        <p>Last modified on: June 9, 2025</p>
+   <footer class="footer glass">
+        <p>© 2025 Rutwik Stuff Branding Umbrella | This website is <a href="https://www.github.io/7zeb/website">open-source*</a></p>
+        <p>Last modified on: September 15, 2025</p>
+        <p>*NewUI 3 is not open-source until November 19, 2025</p>
     </footer>
-        <script src="/dark.js"></script>
+    <script src="/required.js"></script>
 </body>
 </html>

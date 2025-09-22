@@ -9,83 +9,100 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 <body>
     <!-- Navigation Bar -->
-    <nav class="topnav">
-        <div class="nav-logo" style="font-size:1.5em;font-weight:bold;color:var(--section-primary);letter-spacing:0.05em;">7Zeb</div>
+    <nav class="navbar glass">
+        <div class="nav-logo" style="font-size:1.5em;font-weight:bold;letter-spacing:0.05em;">7Zeb</div>
         <div class="nav-links">
             <a href="index.html" class="active">Home</a>
             <a href="/updates.html">Updates</a>
             <a href="/blog.html">Blog</a>
             <a href="/me.html">About Me</a>
             <a href="/more.html">More</a>
-            <button id="dark-toggle-btn" aria-label="Toggle dark mode" style="background:none;border:none;cursor:pointer;font-size:1.4em;vertical-align:middle;outline:none;">
-                <!-- Icon will be inserted by dark.js -->
-                <span id="dark-toggle-icon">🌙</span>
-            </button>
+            <a href="https://BetaCity.github.io">BetaCity</a>
+            <button class="mode-toggle" aria-label="Toggle dark mode">🌙</button
         </div>
     </nav>
 
 
-  
-   <section id="annoucment">
+  <main>
+      <div class="main-flex">
+            <div style="flex:2 1 0; min-width:0;">
+   <section class="glass" id="annoucment">
      <h1>Major Announcements</h1>
        <ul>
-           <li>This site will move to NewUI 4 on September 12, 2025</li>
+           <li>This site is moving to NewUI 4 right now, you can see it here already, some pages might be glitched out</li>
+           <li>If you notice a problem, make an issue on <a href="https://github.com/7zeb/7zeb.github.io/issues"><button>this repo</button></a></li>
        </ul>   
    </section>
 
     <!-- The amazing part -->
-    <section id="home">
+    <section class="glass" id="home">
         <h1 style="color:#1fe079">Welcome to 7Zeb's Website</h1>
+        <h2>This is the migrate branch (used while the site is migrating to NewUI 4)</h2>
         <p>The official 7Zeb website <a href="/me.html"><button>Learn More About 7Zeb</button></a></p>
         <p>"The Saga Never Stops!" - said by 7Zeb (every day since June 15, 2025)</p>
     </section>
 
 
     <!-- YouTube Section -->
-    <section id="youtube">
+    <section class="glass" id="youtube">
         <h2>Newest Video</h2>
-        <p>7Zeb's Newest Video is: Exploring Windows 8 Build 7797</p>
+        <p>7Zeb's Newest Video is: Unboxing the Samsung Galaxy S10 FE</p>
         <h3>Watch it now!</h3>
-        <iframe width="681" height="383" src="https://www.youtube.com/embed/yY3u06bKGIA" title="Exploring Windows 8 Build 7797" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        
-        <p>Currently 634 Subscribers (+1 Since Last Update)</p>
+        <iframe width="620" height="383" src="https://www.youtube.com/embed/TwS8szHOfAs" title="Unboxing the Samsung Galaxy S10 FE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <p>Currently 635 Subscribers (+1 Since Last Update)</p>
         <p>Go to 7Zeb's Channel <a href="https://youtube.com/@7zeb"><button>Here</button></a></p>
     </section>
 
     <!-- Recent Updates -->
-    <section id="recentupdates">
+    <section class="glass" id="recentupdates">
         <h2>Lastest Update</h2>
         <p>This is the latest update from 7Zeb</p>
         <br>
-        <h3>August 28, 2025 7:31 AM CDT</h3>
-        <p>Alright, this week will be a busy week for 7Zeb viewers, I'm dropping a video on Friday, Saturday, Sunday, and GET THIS EVEN MONDAY!!!
-        That's right, the 7Zeb Labor Day Special is happening, in fact I'm doing a dedicated blog post about all the events happening in this
-        week, so make sure you go check that out in the blogs section.</p>
+        <h3>September 18, 2025 7:37 AM CDT</h3>
+        <p>Well hello everyone, I have some news, there's going to be a video coming today, yes today even though it's Thursday and I never upload on Thursday, anyways 
+        the thing that is happening is that there is no school on Friday, so I've decided to upload for all 4 days. I already have 2 of the videos ready, but I have to
+        edit the other 2, 3 of the videos are going to be Exploring Videos and 1 of them will be an unboxing video.</p>
+        <br>
+       <p>For all the updates go to the <a href="/updates.html"><button>Updates Page</button></a></p>
     </section>
 
-    <section id="win10upgradesaga"> 
+    <section class="glass" id="win10upgradesaga"> 
         <h1>Windows 10 Upgrade Saga News</h1>
         <p>The Windows Upgrade Saga is been completed!</p>
         <a href="/windows/10/upgradesaga.html"><button>Go to full page</button></a>
     </section>
 
-    <section id="support-dev">
+    <section class="glass" id="support-dev">
         <h1>Support me</h1>
         <p>Want to support the channel? <a href="https://cash.app/$7zeb">Donate Here</a></p>
     </section>    
 
-    <section id="download-source-code">
+    <section class="glass" id="download-source-code">
     <h1>This site is open source</h1>
     <p>That means anyone can download the code I used to make it.</p>
     <p>Want to download my source code? Well I made an easy way to do it.</p>
     <p>Go to the 7Zeb Download Center <a href="/downloads/index.html"><button>Go Now!</button></a> and download my source code today.</p>
     </section>
+            </div>       
+          <aside class="infobox glass">
+                <h3>Upcoming 7Zeb Events</h3>
+                <p style="margin-left:0.5em;">These are a list of some upcoming 7Zeb Events</p>
+                <ul style="margin-left:1em;">
+                    <li>Windows 10 Upgrade Saga Drop Days (October 13, and 14)</li>
+                    <li>Windows 10 EOS Season (October 13 - October 31)</li>
+                    <li>2nd Fall Upload Boom (November 21 - November 30)</li>
+                    <li>2nd Winter Upload Boom (December 19 - January 5)</li>
+                </ul>
+            </aside>
+      </div>
+  </main>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer glass">
         <p>© 2025 Rutwik Stuff Branding Umbrella | This website is <a href="https://www.github.io/7zeb/website">open-source*</a></p>
-        <p>Last modified on: September 12, 2025</p>
+        <p>Last modified on: September 22, 2025</p>
         <p>*NewUI 3 is not open-source until November 19, 2025</p>
     </footer>
-    <script src="/dark.js"></script>
+    <script src="/required.js"></script>
 </body>
 </html>

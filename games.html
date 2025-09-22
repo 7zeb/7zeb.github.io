@@ -11,29 +11,30 @@
     <link rel="icon" type="image/x-icon" href="logos/logo8.png"></head>
   </head>
   <body>
-       <nav class="topnav">
-        <div class="nav-logo" style="font-size:1.5em;font-weight:bold;color:var(--section-primary);letter-spacing:0.05em;">7Zeb IN</div>
+       <nav class="navbar glass">
+        <div class="nav-logo" style="font-size:1.5em;font-weight:bold;letter-spacing:0.05em;">7Zeb</div>
         <div class="nav-links">
             <a href="index.html" class="active">Home</a>
             <a href="/updates.html">Updates</a>
             <a href="/blog.html">Blog</a>
             <a href="/me.html">About Me</a>
             <a href="/more.html">More</a>
-            <a href="https://Whistoria.github.io">Whistoria</a>
-            <button id="dark-toggle-btn" aria-label="Toggle dark mode" style="background:none;border:none;cursor:pointer;font-size:1.4em;vertical-align:middle;outline:none;">
-                <!-- Icon will be inserted by dark.js -->
-                <span id="dark-toggle-icon">🌙</span>
-            </button>
+            <a href="https://BetaCity.github.io">BetaCity</a>
+            <button class="mode-toggle" aria-label="Toggle dark mode">🌙</button
         </div>
     </nav>
 
+    <main>
+      <div class="main-flex">
+        <div style="flex:2 1 0; min-width:0;">
 
-    <section id="home">
+
+    <section class="glass" id="home">
     <h1>7Zeb Games</h1>
     <p>All the games created by 7Zeb, they are online and created with p5.js</p>
     </section>
 
-    <section id="games">
+    <section class="glass" id="games">
     <a href="/games/orange-paint"><button>Orange Paint</button></a>
     <a href="/games/racingrectangle"><button>Racing Rectangle</button></a>
     <a href="/games/randombutton.html"><button>Draw shapes by clicking a button</button></a>
@@ -45,7 +46,7 @@
     <a href="/games/maze-game-v2"><button>Maze Game v2</button></a>
     </section>
 
-    <section id="game-dev-joruney">
+    <section class="glass" id="game-dev-joruney">
     <h1>7Zeb's Game Dev Journy</h1>
     <h3>April 30, 2025 12:57 PM CDT</h3>
     <p>Ok, so Maze Game, which is a game I've wanted to add, is split into 2 releases, 1 (v1.0), which just has the maze game, while (v2.0) has new features such as a timer, into, how to play, and more. I will have a blog page created for the entire DevLog for Version 2.0, as v1.0 is already done.</p>
@@ -59,10 +60,26 @@
     <p>The new game is called Sun Game, you can increase or decrease the size of the sun, there is a weird glitch in it though, which is if you click on the increase size button, the sun will start turning white every time you click on it, of course this game was coded in p5.js, and the source code can be found in the Github.</p>
     </section>
 
-     <footer>
-        <p>© 2025 Rutwik Stuff Branding Umbrella | This website is <a href="https://www.github.io/7zeb/website">open-source</a></p>
-        <p>Last modified on: April 30, 2025</p>
+        </div>
+        <aside class="infobox glass">
+                <h3>Upcoming 7Zeb Events</h3>
+                <p style="margin-left:0.5em;">These are a list of some upcoming 7Zeb Events</p>
+                <ul style="margin-left:1em;">
+                    <li>Windows 10 Upgrade Saga Drop Days (October 13, and 14)</li>
+                    <li>Windows 10 EOS Season (October 13 - October 31)</li>
+                    <li>2nd Fall Upload Boom (November 21 - November 30)</li>
+                    <li>2nd Winter Upload Boom (December 19 - January 5)</li>
+                </ul>
+            </aside>
+      </div>
+  </main>
+
+    <!-- Footer -->
+    <footer class="footer glass">
+        <p>© 2025 Rutwik Stuff Branding Umbrella | This website is <a href="https://www.github.io/7zeb/website">open-source*</a></p>
+        <p>Last modified on: September 22, 2025</p>
+        <p>*NewUI 3 is not open-source until November 19, 2025</p>
     </footer>
-    <script src="/dark.js"></script>
+    <script src="/required.js"></script>
   </body>
 </html>
