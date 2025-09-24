@@ -4,39 +4,39 @@
       <link href="/style.css" rel="stylesheet" type="text/css" media="all">
 </head>
 <body>
-  <nav class="topnav">
-        <div class="nav-logo" style="font-size:1.5em;font-weight:bold;color:var(--section-primary);letter-spacing:0.05em;">7Zeb IN</div>
+<nav class="navbar glass">
+        <div class="nav-logo" style="font-size:1.5em;font-weight:bold;letter-spacing:0.05em;">7Zeb</div>
         <div class="nav-links">
-            <a href="/index.html" class="active">Home</a>
+            <a href="index.html" class="active">Home</a>
             <a href="/updates.html">Updates</a>
             <a href="/blog.html">Blog</a>
             <a href="/me.html">About Me</a>
             <a href="/more.html">More</a>
-            <a href="https://Whistoria.github.io">Whistoria</a>
-            <button id="dark-toggle-btn" aria-label="Toggle dark mode" style="background:none;border:none;cursor:pointer;font-size:1.4em;vertical-align:middle;outline:none;">
-                <!-- Icon will be inserted by dark.js -->
-                <span id="dark-toggle-icon">🌙</span>
-            </button>
+            <a href="https://BetaCity.github.io">BetaCity</a>
+            <button class="mode-toggle" aria-label="Toggle dark mode">🌙</button
         </div>
     </nav>
 
-<section id="home">
+  <main>
+    <div class="main-flex">
+      <div style="flex:2 1 0; min-width:0;">
+<section class="glass" id="home">
 <h1>Windows 10 Upgrade Saga</h1>
 <h2>This is the guide to the Windows 10 Upgrade Saga.</h2>
 </section>
-
-<section id="editing-process">
+        
+<section class="glass" id="editing-process">
  <h1>Editing Process</h1>
  <p>The editing Phase 1 is done</p> 
- <p>The editing Phase 2 is being edited</p> 
-
+ <p>The editing Phase 2 is done! (UE scheduled for October 14, 2025)</p> 
+ <p>The editing Phase 2 for Normal Edition is in editing</p>
 </section>  
   
-<section id="lenovo">
+<section class="glass" id="lenovo">
 <h2>On the Lenovo Ideapad Flex 14 (Started March 22, 2025)</h2>
 </section>
 
-  <section id="alreadydone">
+  <section class="glass" id="alreadydone">
   <h3>Already done</h3>
   <p>Windows 10 22H2 Installed Succsesfully (May 25, 2025)</p>  
   <p>Windows 10 21H2 Installed Succsesfully (May 25, 2025)</p>  
@@ -83,7 +83,7 @@
   <p>Windows 8.1 Installed Succsefully (March 22, 2025)</p>
   </section>
 
-  <section id="dell">
+  <section class="glass" id="dell">
  <h2>On the Dell Inspiron 5566 (ended due to it not working)</h2> 
 <h3>November 2024</h3>
   <p>Windows 10 Build 9900 failed</p>
@@ -94,10 +94,27 @@
   <p>Windows 10 Build 9785 Installed succsefully</p>
   <p>Windows 8.1 Installed succsefully</p>
   </section>
-  
-  <footer>
-        <p>© 2025 Rutwik Stuff Branding Umbrella | This website is <a href="https://www.github.io/7zeb/7zeb.github.io">open-source</a></p>
+
+        </div>       
+          <aside class="infobox glass">
+                <h3>Upcoming 7Zeb Events</h3>
+                <p style="margin-left:0.5em;">These are a list of some upcoming 7Zeb Events</p>
+                <ul style="margin-left:1em;">
+                    <li>Windows 10 Upgrade Saga Drop Days (October 13, and 14)</li>
+                    <li>Windows 10 EOS Season (October 13 - October 31)</li>
+                    <li>2nd Fall Upload Boom (November 21 - November 30)</li>
+                    <li>2nd Winter Upload Boom (December 19 - January 5)</li>
+                </ul>
+            </aside>
+      </div>
+  </main>
+
+    <!-- Footer -->
+    <footer class="footer glass">
+        <p>© 2025 Rutwik Stuff Branding Umbrella | This website is <a href="https://www.github.io/7zeb/website">open-source*</a></p>
+        <p>Last modified on: September 24, 2025</p>
+        <p>*NewUI 3 is not open-source until November 19, 2025</p>
     </footer>
-      <script src="/dark.js"></script>
+    <script src="/required.js"></script>
 </body>
 </html>
