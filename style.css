@@ -1,39 +1,39 @@
-
 /* The official NewUI 4 CSS File, made by 7Zeb, now open-source */
 
 /* Import Segoe UI */
 @import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&display=swap');
 
-/* Root variables for easy theming */
+/* Root variables for easy theming*/
 :root {
-  --primary-gradient: linear-gradient(135deg, #2fd6e8 0%, #2494c1 60%, #37e6c4 100%);
-  --glass-bg: rgba(255,255,255,0.25);
-  --glass-border: rgba(255,255,255,0.18);
+  --primary-gradient: linear-gradient(135deg, #f59e0b 0%, #d97706 60%, #92400e 100%);
+  --glass-bg: rgba(255,245,235,0.25);
+  --glass-border: rgba(255,245,235,0.18);
   --navbar-height: 64px;
   --footer-height: 50px;
-  --card-bg: rgba(255,255,255,0.22);
-  --card-hover-bg: rgba(255,255,255,0.38);
-  --text-light: #1a2128;
-  --text-dark: #e6f4fa;
-  --button-bg: #2494c1;
-  --button-hover-bg: #37e6c4;
-  --link-color: #2494c1;
+  --card-bg: rgba(255,245,235,0.22);
+  --card-hover-bg: rgba(255,245,235,0.38);
+  --text-light: #2c1f0f;
+  --text-dark: #fef3c7;
+  --button-bg: #d97706;
+  --button-hover-bg: #f59e0b;
+  --link-color: #b45309;
   --section-padding: 2.5rem 1.5rem;
   --infobox-width: 320px;
 }
 
 /* Dark mode variables */
 body.dark-mode {
-  --glass-bg: rgba(25,34,40,0.25);
-  --glass-border: rgba(25,34,40,0.18);
-  --card-bg: rgba(33,37,41,0.30);
-  --card-hover-bg: rgba(33,37,41,0.50);
-  --text-light: #e6f4fa;
-  --text-dark: #1a2128;
-  --button-bg: #37e6c4;
-  --button-hover-bg: #2494c1;
-  --link-color: #37e6c4;
+  --glass-bg: rgba(40,30,20,0.25);
+  --glass-border: rgba(40,30,20,0.18);
+  --card-bg: rgba(50,40,30,0.30);
+  --card-hover-bg: rgba(50,40,30,0.50);
+  --text-light: #fef3c7;
+  --text-dark: #2c1f0f;
+  --button-bg: #f59e0b;
+  --button-hover-bg: #d97706;
+  --link-color: #f59e0b;
 }
+
 
 /* Body and gradient background */
 body {
@@ -365,5 +365,86 @@ body.dark-mode th {
     border-bottom: 1px solid var(--glass-border);
   }
 }
+
+/*dropdowns */
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown trigger (e.g. button or link) */
+.dropdown-toggle {
+  background: var(--button-bg);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.dropdown-toggle:hover {
+  background: var(--button-hover-bg);
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 180px;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(18,58,89,0.08);
+  backdrop-filter: blur(10px) saturate(1.2);
+  -webkit-backdrop-filter: blur(10px) saturate(1.2);
+  padding: 0.5rem 0;
+  display: none;
+  z-index: 999;
+}
+
+/* Dropdown items */
+.dropdown-menu a {
+  display: block;
+  padding: 0.6em 1.2em;
+  color: var(--text-light);
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+.dropdown-menu a:hover {
+  background: var(--button-hover-bg);
+  color: #fff;
+  border-radius: 6px;
+}
+
+/* Show dropdown on hover (optional) */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Dark mode support */
+body:dark-mode .dropdown-menu a {
+  color: var(--text-light);
+}
+body:dark-mode .dropdown-menu a:hover {
+  background: var(--button-bg);
+}
+
+.code-block {
+  background: rgba(0,0,0,0.05);
+  border-radius: 10px;
+  padding: 1em;
+  font-family: 'Courier New', monospace;
+  font-size: 0.95em;
+  overflow-x: auto;
+  color: var(--text-light);
+}
+body.dark-mode .code-block {
+  background: rgba(255,255,255,0.05);
+  color: var(--text-light);
+}
+
 
 /* Extensions go here */
