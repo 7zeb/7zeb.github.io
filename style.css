@@ -446,5 +446,35 @@ body.dark-mode .code-block {
   color: var(--text-light);
 }
 
+#statusWidget {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  padding: 1em;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1em;
+  color: var(--text-light);
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+body.dark-mode #statusWidget {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-light);
+}
+
+#statusWidget h2 {
+  margin-bottom: 0.5em;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+#statusText {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 0.5em;
+}
+
 
 /* Extensions go here */
