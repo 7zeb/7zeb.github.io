@@ -44,3 +44,48 @@ document.addEventListener('DOMContentLoaded', () => {
     showCarousel(index);
   });
 });
+
+async function checkYouTubeUploadToday() {
+  const apiKey = "AIzaSyBe67a0-qIYhodHBj7FfSF2K6PrHOW0MEQ";
+  const channelId = "UCM4Zvt9DVqzAHJOJoCgcF_g";
+  const today = new Date().toISOString().split("T")[0];
+
+  const url = `https://www.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=${channelId}&part=snippet&order=date&maxResults=5`;
+
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+
+    for (const item of data.items) {
+      const publishedDate = item.snippet.publishedAt.split("T")[0];
+      if (publishedDate === today) {
+        return {
+          uploaded: true,
+          title: item.snippet.title,
+          time: item.snippet.publishedAt,
+        };
+      }
+    }
+  } catch (error) {
+    console.error("YouTube API error:", error);
+  }
+
+  return { uploaded: false };
+}
+
+async function updateStatusWidget() {
+  const result = await checkYouTubeUploadToday();
+  const statusText = document.getElementById("statusText");
+
+  if (result.uploaded) {
+    statusText.textContent = "✅ Productive Day";
+    statusText.style.color = "lime";
+    statusText.title = `Uploaded: ${result.title} at ${new Date(result.time).toLocaleTimeString()}`;
+  } else {
+    statusText.textContent = "😴 Free Day";
+    statusText.style.color = "gray";
+    statusText.title = "No upload detected today";
+  }
+}
+
+document.addEventListener("DOMContentLoaded", updateStatusWidget);
