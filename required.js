@@ -45,6 +45,9 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+//non NewUI JS Calls
+
+//2-1 widget calls and function
 async function checkYouTubeUploadToday() {
   const apiKey = "AIzaSyBe67a0-qIYhodHBj7FfSF2K6PrHOW0MEQ";
   const channelId = "UCM4Zvt9DVqzAHJOJoCgcF_g";
@@ -89,3 +92,33 @@ async function updateStatusWidget() {
 }
 
 document.addEventListener("DOMContentLoaded", updateStatusWidget);
+
+//the refresh times
+const refreshTimes = [
+  "00:00", "15:00", "16:00", "16:30", "17:00", "18:00", "23:00"
+];
+
+function scheduleRefreshes() {
+  const now = new Date();
+  const localOffset = now.getTimezoneOffset() * 60000;
+  const utc6Offset = -6 * 60 * 60000;
+
+  refreshTimes.forEach(time => {
+    const [hour, minute] = time.split(":").map(Number);
+    const target = new Date(now);
+    target.setUTCHours(hour + 6, minute, 0, 0); // Convert UTC-6 to local time
+
+    const delay = target.getTime() - now.getTime();
+    if (delay > 0) {
+      setTimeout(() => {
+        console.log(`⏱ Refreshing at ${time} UTC-6`);
+        updateStatusWidget();
+      }, delay);
+    }
+  });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  updateStatusWidget(); // Initial check
+  scheduleRefreshes();  // Schedule future checks
+});
