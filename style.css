@@ -5,34 +5,35 @@
 
 /* Root variables for easy theming*/
 :root {
-  --primary-gradient: linear-gradient(135deg, #f59e0b 0%, #d97706 60%, #92400e 100%);
-  --glass-bg: rgba(255,245,235,0.25);
-  --glass-border: rgba(255,245,235,0.18);
+  --primary-gradient: linear-gradient(135deg, #2fd6e8 0%, #2494c1 60%, #37e6c4 100%);
+  --glass-bg: rgba(255,255,255,0.25);
+  --glass-border: rgba(255,255,255,0.18);
   --navbar-height: 64px;
   --footer-height: 50px;
-  --card-bg: rgba(255,245,235,0.22);
-  --card-hover-bg: rgba(255,245,235,0.38);
-  --text-light: #2c1f0f;
-  --text-dark: #fef3c7;
-  --button-bg: #d97706;
-  --button-hover-bg: #f59e0b;
-  --link-color: #b45309;
+  --card-bg: rgba(255,255,255,0.22);
+  --card-hover-bg: rgba(255,255,255,0.38);
+  --text-light: #1a2128;
+  --text-dark: #e6f4fa;
+  --button-bg: #2494c1;
+  --button-hover-bg: #37e6c4;
+  --link-color: #2494c1;
   --section-padding: 2.5rem 1.5rem;
   --infobox-width: 320px;
 }
 
 /* Dark mode variables */
 body.dark-mode {
-  --glass-bg: rgba(40,30,20,0.25);
-  --glass-border: rgba(40,30,20,0.18);
-  --card-bg: rgba(50,40,30,0.30);
-  --card-hover-bg: rgba(50,40,30,0.50);
-  --text-light: #fef3c7;
-  --text-dark: #2c1f0f;
-  --button-bg: #f59e0b;
-  --button-hover-bg: #d97706;
-  --link-color: #f59e0b;
+  --glass-bg: rgba(25,34,40,0.25);
+  --glass-border: rgba(25,34,40,0.18);
+  --card-bg: rgba(33,37,41,0.30);
+  --card-hover-bg: rgba(33,37,41,0.50);
+  --text-light: #e6f4fa;
+  --text-dark: #1a2128;
+  --button-bg: #37e6c4;
+  --button-hover-bg: #2494c1;
+  --link-color: #37e6c4;
 }
+
 
 
 /* Body and gradient background */
