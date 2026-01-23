@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     <ul style="margin-left:1em;">
       <li>Windows Upgrade Saga Speedrun Week 2 (January 23, 2026)</li>
       <li>Windows Vista's 19th Birthday (January 30, 2026)</li>
+      <li>The Start of the Cities Skylines series (February 20, 2026)</li>
       <li>2nd Spring Upload Boom (March 6 - March 15, 2026)</li>
     </ul>
   `;
