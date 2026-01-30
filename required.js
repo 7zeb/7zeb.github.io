@@ -2,7 +2,6 @@
 //This is REQUIRED for NewUI 4 to work proporly
 
 
-//felfeb
 // DARK MODE TOGGLE
 document.addEventListener('DOMContentLoaded', () => {
   const modeToggle = document.querySelector('.mode-toggle');
