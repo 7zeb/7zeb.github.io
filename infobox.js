@@ -7,13 +7,12 @@ document.addEventListener("DOMContentLoaded", function () {
         <li>Windows 8 Upgrade Saga</li>
         <li>MMView (Cool thing in development)</li>
         <li>Exploring Videos</li>
-        <li>More open source Github Projects</li>
+        <li>Getting Windows XP running on the Raspberry Pi (via QEMU)</li>
         <li>A This is Real video</li>
       <br>
       <h3>Upcoming 7Zeb Events</h3>
       <p style="margin-left:0.5em;">These are a list of some upcoming 7Zeb Events</p>
       <ul style="margin-left:1em;">
-          <li>Infobox Adding Week (April 28, 2026 - May 1, 2026)
           <li>2nd Summer Upload Boom (May 21, 2026 - August 11, 2026)</li>
           <li>Orange Upload Boom (October 8, 2026 - October 12, 2026)</li>
       <li>
