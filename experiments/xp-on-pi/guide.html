@@ -1,0 +1,32 @@
+<h1>Windows XP on the Raspberry Pi</h1>
+<h2>Yes this is a guide on how to do it</h2>
+<br>
+<h3>DISCLAIMER:</h3>
+<h2>If you are doing this on a 1GB, 2GB, or 4GB Pi, please create a swap file for your Pi, to learn how to make the swap file go to
+<a href="https://7zeb.github.io/experiments/xp-on-pi/swap-creation.html">This page</a> to help you make the swap file and tell you why
+you would need it.</h2>
+<br>
+<h2>This setup is not recommended for daily use, this is because
+<ol>
+  <li>Windows XP ended support in April 2014, that is over 10 years ago.</li>
+  <li>Windows XP will probably not work great on your Pi, this is just for experimental and educational purposes.</li>
+</ol>
+  <br>
+  If you are ok with these, please continue reading.
+</h2>
+<br>
+<h2>The Steps for getting XP on your Raspberry Pi</h2>
+<br>
+<h3>Step 1: Update... obviously, your on Linux (unless you installed Windows 11 ARM on it)</h3>
+<p>First open up terminal and do "sudo apt update" and update your system... you probably already know how to do this and don't need me to tell you lol,
+don't forget to do "sudo apt upgrade" as well to actually upgrade it</p>
+<br>
+<h3>Step 2: Get QEMU</h3>
+<p>For this to work your going to need QEMU, since the Raspberry Pi has a ARM-based CPU and Windows XP is x86 (or x64 depending on which edition you
+plan on installing, I recommend just doing Windows XP Home RTM because it's lighter than the x64 version), for this you can just run the command
+"sudo apt install qemu-system" to install it, you should be doing "sudo apt install qemu-system -y" so you don't have to press y to accept, but we
+all forget to do that.</p>
+<br>
+<h3>Step 3: Make your config file</h3>
+<p>In order for your virtual machine to actually run, you will need to make the config file, I recommend that you do this in a .sh file since you can just
+double click it and then it will open the virtual machine. For what to put in your .sh file see the following:</p>

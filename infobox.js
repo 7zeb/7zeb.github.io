@@ -13,8 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
       <h3>Upcoming 7Zeb Events</h3>
       <p style="margin-left:0.5em;">These are a list of some upcoming 7Zeb Events</p>
       <ul style="margin-left:1em;">
-          <li>2nd Easter Upload Boom (April 1, 2026 - April 6, 2026)</li>
-          <li>Easter Drop (April 1, 2026 - April 6, 2026)</li>
+          <li>Infobox Adding Week (April 28, 2026 - May 1, 2026)
           <li>2nd Summer Upload Boom (May 21, 2026 - August 11, 2026)</li>
           <li>Orange Upload Boom (October 8, 2026 - October 12, 2026)</li>
       <li>
