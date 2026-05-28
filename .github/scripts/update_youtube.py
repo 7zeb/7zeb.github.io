@@ -32,7 +32,7 @@ if "<!-- YOUTUBE-LATEST-START -->" not in content:
     raise RuntimeError("Markers not found in index.html — add <!-- YOUTUBE-LATEST-START --> and <!--
 YOUTUBE-LATEST-END --> around the newest video block.")
       
-with open("../../index.html", "r") as f:
+with open("index.html", "r") as f:
     content = f.read()
 
 updated = re.sub(
