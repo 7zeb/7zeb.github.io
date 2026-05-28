@@ -26,14 +26,16 @@ block = (
     f'allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" '
     f'referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>\n'
     "        <!-- YOUTUBE-LATEST-END -->"
-)=
+)
+
+with open("index.html", "r", encoding="utf-8") as f:
+    content = f.read()
 
 if "<!-- YOUTUBE-LATEST-START -->" not in content:
-    raise RuntimeError("Markers not found in index.html — add <!-- YOUTUBE-LATEST-START --> and <!--
-YOUTUBE-LATEST-END --> around the newest video block.")
-      
-with open("index.html", "r") as f:
-    content = f.read()
+    raise RuntimeError(
+        "Markers not found in index.html, add <!-- YOUTUBE-LATEST-START --> "
+        "and <!-- YOUTUBE-LATEST-END --> around the newest video block."
+    )
 
 updated = re.sub(
     r"<!-- YOUTUBE-LATEST-START -->.*?<!-- YOUTUBE-LATEST-END -->",
@@ -45,7 +47,7 @@ updated = re.sub(
 if updated == content:
     print("No change.")
 else:
-    with open("index.html", "w") as f:
+    with open("index.html", "w", encoding="utf-8") as f:
         f.write(updated)
 
     print(f"Updated: {title} ({video_id})")
