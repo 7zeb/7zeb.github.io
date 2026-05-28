@@ -28,7 +28,7 @@ block = (
     "        <!-- YOUTUBE-LATEST-END -->"
 )
 
-with open("index.html", "r") as f:
+with open("../../index.html", "r") as f:
     content = f.read()
 
 updated = re.sub(
